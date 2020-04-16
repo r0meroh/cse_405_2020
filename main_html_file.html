@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Html File</title>
+</head>
+<body>
+<h1>This is just a sample of what I am currently learning.</h1>
+<h2>Below is a javascript code snippet used within the html file
+</h2>
+<script type="text/javascript">
+    //say hello world
+    alert("hello world");
+
+
+    var x = 10;
+    function hugo(x) {
+        if (x < 20){
+            x = x + 20;
+            window.document.write("X was increased to : ");
+            window.document.write(x);
+        }else{
+            window.document.write("x is already above 20. The value is: ");
+            window.document.write(x);
+        }
+
+    }
+
+    // from algorithmics, french multiplication binary algorithm
+    function a_la_rousse(x, y){
+        result = 0;
+        while(x >= 1){
+            if(x % 2 != 0){
+                result += y;
+                x = x / 2;
+                y = y + y;
+
+            }else{
+                x = x / 2;
+                y = y + y;
+            }
+        }
+        return result;
+    }
+
+    window.document.write(" a la rousse ")
+    window.document.write(a_la_rousse(2,2));
+</script>
+
+<h3>Below this is a code snippet written from a separate JavaScript file </h3>
+<script src="main_js_file.js"></script>
+</body>
+</html>

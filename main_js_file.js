@@ -99,3 +99,12 @@ console.log('The 10th value should be the last two places added together');
 console.log('https://miniwebtool.com/list-of-fibonacci-numbers/?number=10');
 
 // fibonacci with promises
+
+//let fibo_promise = new Promise(function (resolve,reject) {
+//    if(number < 2){
+//        resolve(return number);
+//    }else{
+//        reject()
+//    }
+
+//})

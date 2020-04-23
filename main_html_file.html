@@ -1,25 +1,41 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Sample Html File</title>
 </head>
+
+
 <body>
+<!--
+Below is basic html code to display contents onto a webpage.
+The browser of choice is Google Chrome
+-->
+
+
 <h1>This is just a sample of what I am currently learning.</h1>
-<h2>Below is a javascript code snippet used within the html file
-</h2>
+<h2>Below is a javascript code snippet used within the html file</h2>
+
+<!--
+Below is a code block of javascript encapsulated within the html file using the 'script'
+tag.
+-->
 <script type="text/javascript">
-    //say hello world
+    //say hello world in a pop up window
     alert("hello world");
 
-
+    //basic variable assignments and function declerations
     var x = 10;
+    //this function was omitted from the webpage output, but left in the code to showcase
+    //the various functionality learned for this assignment.
     function hugo(x) {
-        if (x < 20){
+        if (x < 20) {
             x = x + 20;
+            //here we write directly to the webpage using JavaScript with the window.document functions
             window.document.write("X was increased to : ");
             window.document.write(x);
-        }else{
+        } else {
             window.document.write("x is already above 20. The value is: ");
             window.document.write(x);
         }
@@ -27,15 +43,16 @@
     }
 
     // from algorithmics, french multiplication binary algorithm
-    function a_la_rousse(x, y){
+    // this algorithm is displayed within the webpage output.
+    function a_la_rousse(x, y) {
         result = 0;
-        while(x >= 1){
-            if(x % 2 != 0){
+        while (x >= 1) {
+            if (x % 2 != 0) {
                 result += y;
                 x = x / 2;
                 y = y + y;
 
-            }else{
+            } else {
                 x = x / 2;
                 y = y + y;
             }
@@ -44,10 +61,19 @@
     }
 
     window.document.write(" a la rousse ")
-    window.document.write(a_la_rousse(2,2));
+    window.document.write(a_la_rousse(2, 2));
 </script>
+<br>
 
-<h3>Below this is a code snippet written from a separate JavaScript file </h3>
 <script src="main_js_file.js"></script>
+<h3>Below this is a code snippet written from a separate JavaScript file </h3>
+<h4>For the rest of the code, use the console output under developer tools</h4>
+<h5>
+    <ul>
+        <li>click on menu (the three dots on the top right corner)</li>
+        <li>scroll down to 'more tools' within the dropdown menu</li>
+        <li>click on 'developer tools'</li>
+    </ul>
+</h5>
 </body>
 </html>

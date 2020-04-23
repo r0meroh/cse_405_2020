@@ -1,17 +1,24 @@
-alert('hello this is in a separate file including the basics of javascript');
-console.warn('this is a warning');
+//In this file, pure JavaScript code is being used
+
+//the alert function works here as well for a pop up window within the webpage, but it is omitted
+
+//due to the alerts superseding the order of the code and executing immediately
+//alert('hello this is in a separate file including the basics of javascript');
+
+//we begin the code within the console by stating a warning
+console.warn('this is a warning, congrats you found the console');
 
 let my_num = 55;
 let name = 'hugo';
 let last = 'romero';
 let arr = last.split('');
 
-let arri = new Array(1,2,3,4,5);
+let arri = new Array(1, 2, 3, 4, 5);
 let arr2 = ['apples', 'oranges', 4, 55, 66, 'avocados'];
 
 window.document.write(`hello my name is ${name} ${last} and I want $${my_num}\n`);
 window.document.write(last.length);
-window.document.write(last.substring(1,3).toUpperCase());
+window.document.write(last.substring(1, 3).toUpperCase());
 
 console.log(arr, arri, arr2);
 console.log(arri.push('mangos'));
@@ -39,14 +46,35 @@ let my_objectJSON = JSON.stringify(my_object);
 console.log('printing out a JSON formatted object:  \n');
 console.log(my_objectJSON);
 
-for(let i = 0; i < 10; i++){
+for (let i = 0; i < 10; i++) {
     console.log(my_objectJSON);
 }
 
 let xx = 0;
 
-while(xx < 5){
+while (xx < 5) {
 
     console.log('hello');
     xx++;
 }
+
+// fibonacci sequence as per book "Fundamentals of Algorithmics"
+//psuedo code:
+//
+//function Fibonacci(n)
+//   if n < 2 then return n
+//   else return Fibonacci (n-1) + Fibonacci(n-2)
+
+function Fibonacci(number) {
+
+    if (number < 2) {
+        return number
+    } else {
+        return Fibonacci(number - 1) + Fibonacci(number - 2);
+    }
+
+}
+
+console.log(Fibonacci(10));
+
+// fibonacci with promises

@@ -53,4 +53,7 @@ Unfortunately, I could not figure out in time how to implement the same algorith
 
 Here is the end result the code displays on the web brower's console. I used console Warnings to facilitate the readability of the console between code snippets
 
+The program also uses JavaScript's object oriented ability to implement objects and parse them into JSON styled output that can be written to an external file or sent to a server of choice
+
+
 ![console](https://github.com/r0meroh/cse_405_2020/blob/master/images/console_result.PNG)

@@ -107,4 +107,4 @@ console.log('https://miniwebtool.com/list-of-fibonacci-numbers/?number=10');
 //        reject()
 //    }
 
-//})
+//}

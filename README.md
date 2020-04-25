@@ -9,3 +9,10 @@ ___
 ### Git Progress report
 This is the initial progress report for the week of **April 15th 2020.**
 The objective was to set up a remote repository. 
+
+### JavaScript and JSON
+This is the progress report for the week of **April 24th 2020**
+
+This report incorporates **Html,JavaScript,and JSON** fundamentals.
+First off, I created a basic **Html text webpage** to display messages to the browser.
+

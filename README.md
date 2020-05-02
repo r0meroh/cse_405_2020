@@ -104,6 +104,18 @@ I made my own server script to run on my local machine within the console, I als
 
 unfortuantely, I experienced a bug in some modules that I used that were old. Here both the IDE I am using(webstorm) and Github detected the potential compromised files.
 
-![security](https://github.com/r0meroh/cse_405_2020/blob/master/images/node_missing_package.PNG)
+![security](https://github.com/r0meroh/cse_405_2020/blob/master/images/security.PNG)
 
-after 
+
+after removing these files, obviously the code couldn't run
+
+
+![powershell](https://github.com/r0meroh/cse_405_2020/blob/master/images/node_missing_package.PNG)
+
+
+
+This also led to merge conflicts with the repository remotely
+
+![merge_conflict](https://github.com/r0meroh/cse_405_2020/blob/master/images/merge_conflict.PNG)
+
+so, all in all I learned the basics of Node.Js and how to use modules and the importance of version control with relation to locally hosted working code and remote conflicts due to missing packages. Most importantly I learned the need for running certain Node.Js Modules with specific versions and updates that issued bug and security fixes.

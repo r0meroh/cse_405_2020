@@ -61,3 +61,28 @@ The program also uses JavaScript's object oriented ability to implement objects 
 
 
 ![console](https://github.com/r0meroh/cse_405_2020/blob/master/images/console_result.PNG)
+
+---
+---
+---
+### Node.Js
+
+This is the progress report for the **Node.Js** week of **5/1/2020**.
+I am able to understand the basics of Node modules and **NPM** which is a collection of Node Modules that one can use in their code. That is the whole point of Node.Js, to use and make node modules that can be implemented in the code. All of this is done in a way called "asynchronous" which means more than one process can be called and executed without having to wait on an other process to finish first before continuing in the script file.
+
+Here I created a simple script
+
+![script_node](https://github.com/r0meroh/cse_405_2020/blob/master/images/test_script.PNG)
+
+I assign the value to be used and compare it to what I am expecting:
+
+![result_node](https://github.com/r0meroh/cse_405_2020/blob/master/images/test_result.PNG)
+
+
+Node modules are similar to the vast python libraries/modules used in python programs. In Node.Js there is a repository of various Node Modules that one can use on their code.  
+Here I install some Node.Js modules to use on my code
+
+
+![Node_installs](https://github.com/r0meroh/cse_405_2020/blob/master/images/installing_node_modules.PNG)
+
+

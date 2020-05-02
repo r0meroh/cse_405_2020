@@ -86,3 +86,19 @@ Here I install some Node.Js modules to use on my code
 ![Node_installs](https://github.com/r0meroh/cse_405_2020/blob/master/images/installing_node_modules.PNG)
 
 
+I made my own server script to run on my local machine within the console, I also made a version that I dictate which port to run on so when the browser is used the given port is required to access the result of the script.
+
+![server_script](https://github.com/r0meroh/cse_405_2020/tree/master/images)
+
+
+
+![server_result](https://github.com/r0meroh/cse_405_2020/blob/master/images/server_result.PNG)
+
+
+![server_port](https://github.com/r0meroh/cse_405_2020/blob/master/images/server_port.PNG)
+
+
+![server_running](https://github.com/r0meroh/cse_405_2020/blob/master/images/server_port_running.PNG)
+
+![server_browser_port](https://github.com/r0meroh/cse_405_2020/blob/master/images/browser_port.PNG)
+

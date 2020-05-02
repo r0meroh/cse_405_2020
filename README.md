@@ -102,3 +102,8 @@ I made my own server script to run on my local machine within the console, I als
 
 ![server_browser_port](https://github.com/r0meroh/cse_405_2020/blob/master/images/browser_port.PNG)
 
+unfortuantely, I experienced a bug in some modules that I used that were old. Here both the IDE I am using(webstorm) and Github detected the potential compromised files.
+
+![security](https://github.com/r0meroh/cse_405_2020/blob/master/images/node_missing_package.PNG)
+
+after 

@@ -119,3 +119,30 @@ This also led to merge conflicts with the repository remotely
 ![merge_conflict](https://github.com/r0meroh/cse_405_2020/blob/master/images/merge_conflict.PNG)
 
 so, all in all I learned the basics of Node.Js and how to use modules and the importance of version control with relation to locally hosted working code and remote conflicts due to missing packages. Most importantly I learned the need for running certain Node.Js Modules with specific versions and updates that issued bug and security fixes.
+
+---
+---
+### Firebase and authentication
+This is the progress report for **5/8/2020** which is firebase implementation and user authentication.
+
+first, I created a *Project* with the account I created in Google's firebase
+
+![create](https://github.com/r0meroh/cse_405_2020/blob/master/images_firebase/firebase_create.PNG)
+
+In this class we are making a **WebApp**, so that is what I chose in the *firebase console* to be able to link to my localhost project on my computer.
+
+
+![console](https://github.com/r0meroh/cse_405_2020/blob/master/images_firebase/firebase_console.PNG)
+
+
+
+I am given a **appId** and **authDomain** as well as other fields with their values directly from Firebase to be directly injected into the code of my app. For security reasons, I am not providing a full screenshot of the credentials.
+
+![config](https://github.com/r0meroh/cse_405_2020/blob/master/images_firebase/initialize_firebase.PNG)
+
+Firebase gives couple of options in the matter of methods for user identification, here is the template I chose to go with, which sends an email to the user to verify the account.
+
+![verify](https://github.com/r0meroh/cse_405_2020/blob/master/images_firebase/user_authentication.PNG)
+
+
+In the next progress report *firebase's* **firestore** will be used to create a data base that permitted users will be allowed to manipulate.

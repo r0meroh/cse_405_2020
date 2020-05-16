@@ -146,3 +146,14 @@ Firebase gives couple of options in the matter of methods for user identificatio
 
 
 In the next progress report *firebase's* **firestore** will be used to create a data base that permitted users will be allowed to manipulate.
+
+
+---
+---
+##Firestore Cloud based Database
+
+As part of the #webApp# that needs to be created for this class, a cloud storage provider named **Firestore** is implemented to work with the previous code from *Google's* **firebase**.
+
+The first step is in the **Firebase** console I initalize a database with the **Firestore** option.
+
+![database](

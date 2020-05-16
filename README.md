@@ -156,4 +156,24 @@ As part of the #webApp# that needs to be created for this class, a cloud storage
 
 The first step is in the **Firebase** console I initalize a database with the **Firestore** option.
 
-![database](
+I add entries to the database manually in my code.
+
+
+![employee_code](https://github.com/r0meroh/cse_405_2020/blob/master/images_firebase/employees_firestore.PNG)
+
+
+
+I linked the my current code for the web app with the firestore console:
+
+
+
+![link](https://github.com/r0meroh/cse_405_2020/blob/master/images_firebase/firestore_code.PNG)
+
+
+
+and with that I am able to see the changes up on the cloud within the database option in the console of my firebase project:
+
+![changes](https://github.com/r0meroh/cse_405_2020/blob/master/images_firebase/added_employees.PNG)
+
+
+![changes_2](https://github.com/r0meroh/cse_405_2020/blob/master/images_firebase/firestore_console.PNG)

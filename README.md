@@ -179,3 +179,34 @@ and with that I am able to see the changes up on the cloud within the database o
 
 
 ![changes_2](https://github.com/r0meroh/cse_405_2020/blob/master/images_firebase/firestore_console.PNG)
+
+
+---
+---
+### Prototype web app
+
+This is the progress report for the week of **5/22/2020** which is for **hosting** on *firebase*
+
+here is the process I had to do.
+
+first download the *firebase* tools named CLI:
+
+![tools](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/install_cli.PNG)
+
+
+next, I had to log into **firebase** using the tool:
+
+![login](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/firebase_LOog.PNG)
+
+The confirmation was seen on the console(online):
+
+![consoleLogin](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/firebase_login.PNG)
+
+I ran the command *firebase init* and chose my existing project, added what services I wanted the project to have and deployed it:
+
+![deploy](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/website.PNG)
+
+
+and up to date(as of 5/22/2020) here is the working site:
+
+https://cse-405-firebase.firebaseapp.com/

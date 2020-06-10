@@ -210,3 +210,12 @@ I ran the command *firebase init* and chose my existing project, added what serv
 and up to date(as of 5/22/2020) here is the working site:
 
 https://cse-405-firebase.firebaseapp.com/
+
+
+---
+***Final report full app***
+The final version has the working app. None of the contents display unless an user visting the app either logs in or signs up. The users then are stored in the authentication portion of firebase. The users logged in can make changes to the roster, but only when logged in. After logging out, the site stops displaying the content and the user can no longer make any changes and is logged out. The database also has rules that reflect that only existing logged in users can make changes.
+
+user visiting site:
+
+![not_loggedin](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/not_logged.PNG)

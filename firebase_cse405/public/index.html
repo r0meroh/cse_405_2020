@@ -1,0 +1,239 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- bootstrap related files -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <!-- jquery import -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- font awesome for the icons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        
+        <!-- custom styles -->
+        <link rel="stylesheet" href="styles.css" >
+
+         <!-- firebase related files -->
+        <script  src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+        <script  src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+        <script  src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyDU6T_OH-UlgJaghdfRLXPcBaahk_dUWog",
+                authDomain: "cse-405-firebase.firebaseapp.com",
+                databaseURL: "https://cse-405-firebase.firebaseio.com",
+                projectId: "cse-405-firebase",
+                storageBucket: "cse-405-firebase.appspot.com",
+                messagingSenderId: "41117990618",
+                appId: "1:41117990618:web:67517e10624a0c5035afe3",
+                measurementId: "G-K57Y1P624P"
+            };
+            // Initialize Firebase
+
+            firebase.initializeApp(firebaseConfig);
+           // firebase.analytics();
+
+            const auth = firebase.auth();
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+    </head>
+    <body>
+
+
+    <div class="alert alert-success text-center" id="dashboard" role="alert">
+
+            <!-- NAVBAR -->
+            <nav class="z-depth-0 green lighten-4">
+
+                <div   class="nav-wrapper container">
+                    <font size="+4"> Employee Roster App </font>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+
+                        <li class="logged-in">
+                            <a href="#" class="grey-text" id="logout">Logout</a>
+                        </li>
+
+                        <li class="logged-out">
+                            <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
+                        </li>
+                        <li class="logged-out">
+                            <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Sign up</a>
+                        </li>
+                        </span>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- SIGN UP MODAL -->
+            <div id="modal-signup" class="modal">
+                <div class="modal-content">
+                    <h4>Sign up</h4><br />
+                    <form id="signup-form">
+                        <div class="input-field">
+                            <input type="email" id="signup-email" required />
+                            <label for="signup-email">Email address</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="signup-password" required />
+                            <label for="signup-password">Choose password</label>
+                        </div>
+                        <button class="btn green darken-2 z-depth-0">Sign up</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- LOGIN MODAL -->
+            <div id="modal-login" class="modal">
+                <div class="modal-content">
+                    <h4>Login</h4><br />
+                    <form id="login-form">
+                        <div class="input-field">
+                            <input type="email" id="login-email" required />
+                            <label for="login-email">Email address</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="login-password" required />
+                            <label for="login-password">Your password</label>
+                        </div>
+                        <button class="btn green darken-2 z-depth-0">Login</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ACCOUNT MODAL -->
+            <div id="modal-account" class="modal">
+                <div class="modal-content center-align">
+                    <h4>Account details</h4><br />
+                    <div class="account-details"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="container">
+
+                <!-- button to create an employee -->
+                <button class="btn btn-success" id="createEmployee">
+                    Create Employee <i class="fa fa-plus" aria-hidden="true" style="position: absolute; "></i>
+                </button>
+
+                <!-- Filters drop down -->
+                <div class="btn-group pull-right">
+                    <button type="button"
+                            class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            id="filter_button">
+                    Default Employee Filters <i class="fa fa-filter" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="onlyMalesFilter"> Male only</a>
+                        <a class="dropdown-item" id="fullTimeFilter">  Full-time only</a>
+                        <a class="dropdown-item" id="olderThenFilter"> Older than 30</a>
+                        <a class="dropdown-item" id="ageBetweenFilter"> Older than 35, but younger than 50</a>
+                        <a class="dropdown-item" id="yearsOfExperienceFilter"> Female and 5 to 10 years of experience</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" id="clearFilter"> Clear Filter</a>
+                    </div>
+                </div>
+
+
+
+                <div id="operationStatus"></div>
+
+                <div class="employeeForm">
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" class="form-control" id="fname" placeholder="First Name">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                                      </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email address">
+                                  </div>
+                                </div>
+        
+                                <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                          <label for="age">Age</label>
+                                          <input type="number" class="form-control" id="age">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                          <label for="gender">Gender</label>
+                                          <select id="gender" class="form-control">
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                          <label for="yearsOfExperience">Years of Experience</label>
+                                          <input type="text" class="form-control" id="yearsOfExperience">
+                                        </div>
+                                </div>
+
+                                <div class=text-right>
+                                    <button class="btn btn-default" id="cancel">Cancel</button>
+                                    <button class="btn btn-primary" id="dynamicBtn"></button>
+                                </div>
+                </div>
+
+            <table class="table table-striped" id="datable">
+                <thead class="thead-inverse">
+                <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Years of experience</th>
+
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+                </thead>
+                <tbody class="tbodyData">
+                </tbody>
+            </table>
+        </div>
+    <!-- initialize script
+    <script src="initialize.js"></script>-->
+    <!-- filtering scripts -->
+    <script src="filter.js"></script>
+    <!-- custom script -->
+    <script src="script.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="auth.js"></script> -->
+    <script src = "auth.js"></script>
+    <script src="initMainPage.js"></script>
+    </body>
+</html>

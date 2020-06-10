@@ -239,3 +239,15 @@ new user gets stored:
 returning user logging in:   
 
 ![authcoded](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/loggin.PNG)
+
+
+
+full access once logged in:
+
+![loggedinn](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/logged_in.PNG)
+
+
+database rules that only allow additions to verified logged in users:
+
+
+![verifyuserdata](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/database_rules.PNG)

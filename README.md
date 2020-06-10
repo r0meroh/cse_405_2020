@@ -219,3 +219,23 @@ The final version has the working app. None of the contents display unless an us
 user visiting site:
 
 ![not_loggedin](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/not_logged.PNG)
+
+
+user signing up:
+
+![signup](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/user_at_sign_up.PNG)
+
+
+sign up code:
+
+![signcode](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/user_signUp_code.PNG)
+
+
+new user gets stored:
+
+![storeduser](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/user_stored.PNG)
+
+
+returning user logging in:   
+
+![authcoded](https://github.com/r0meroh/cse_405_2020/blob/master/firebase_cse405/images_firebase/loggin.PNG)
